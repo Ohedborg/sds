@@ -13,16 +13,16 @@
   --sds-color-black-700: #0c0c0dd9;
   --sds-color-black-800: #0c0c0de5;
   --sds-color-black-900: #0c0c0df2;
-  --sds-color-brand-100: #f5f5f5;
+  --sds-color-brand-100: #c91212;
   --sds-color-brand-1000: #111111;
   --sds-color-brand-200: #e6e6e6;
   --sds-color-brand-300: #d9d9d9;
   --sds-color-brand-400: #b3b3b3;
   --sds-color-brand-500: #757575;
   --sds-color-brand-600: #444444;
-  --sds-color-brand-700: #383838;
-  --sds-color-brand-800: #2c2c2c;
-  --sds-color-brand-900: #1e1e1e;
+  --sds-color-brand-700: #dc1616;
+  --sds-color-brand-800: #e41d16;
+  --sds-color-brand-900: #cff7d3;
   --sds-color-gray-100: #f5f5f5;
   --sds-color-gray-1000: #111111;
   --sds-color-gray-200: #e6e6e6;
@@ -31,7 +31,7 @@
   --sds-color-gray-500: #757575;
   --sds-color-gray-600: #444444;
   --sds-color-gray-700: #383838;
-  --sds-color-gray-800: #2c2c2c;
+  --sds-color-gray-800: #9420c2;
   --sds-color-gray-900: #1e1e1e;
   --sds-color-green-100: #ebffee;
   --sds-color-green-1000: #062d1b;
@@ -43,13 +43,13 @@
   --sds-color-green-700: #008043;
   --sds-color-green-800: #02542d;
   --sds-color-green-900: #024023;
-  --sds-color-pink-100: #fcf1fd;
+  --sds-color-pink-100: #ea00ff;
   --sds-color-pink-1000: #3f1536;
-  --sds-color-pink-200: #fae1fa;
-  --sds-color-pink-300: #f5c0ef;
+  --sds-color-pink-200: #e41d16;
+  --sds-color-pink-300: #5a5a5a;
   --sds-color-pink-400: #f19edc;
   --sds-color-pink-500: #ea3fb8;
-  --sds-color-pink-600: #d732a8;
+  --sds-color-pink-600: #32d771;
   --sds-color-pink-700: #ba2a92;
   --sds-color-pink-800: #8a226f;
   --sds-color-pink-900: #57184a;
@@ -377,6 +377,7 @@
 /* size: default (default) */
 :root {
   --sds-size-blur-100: 0.25rem;
+  --sds-size-demo: default value;
   --sds-size-depth-0: 0rem;
   --sds-size-depth-025: 0.0625rem;
   --sds-size-depth-100: 0.25rem;
@@ -393,6 +394,8 @@
   --sds-size-icon-large: 2.5rem;
   --sds-size-icon-medium: 2rem;
   --sds-size-icon-small: 1.5rem;
+  --sds-size-number: 0.3125rem;
+  --sds-size-number-2: var(--@typography_primitives-scale-01);
   --sds-size-radius-100: 0.25rem;
   --sds-size-radius-200: 0.5rem;
   --sds-size-radius-400: 1rem;
@@ -514,7 +517,7 @@
   --sds-effects-shadows-drop-shadow-400: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-100) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-500: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-400) var(--sds-size-depth-negative-200) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-600: var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-200) var(--sds-color-black-400);
-  --sds-effects-shadows-inner-shadow-100: inset var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-blur-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+  --sds-effects-shadows-inner-shadow-100: inset 0px var(--sds-size-depth-025) var(--sds-size-blur-100) undefinedpx var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-200: inset var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-300: inset var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-400: inset var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-100) var(--sds-color-black-200);
