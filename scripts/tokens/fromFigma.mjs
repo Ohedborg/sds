@@ -1,5 +1,9 @@
-// run with node --env-file=.env app.mjs
-const TOKEN = process.env.FIGMA_ACCESS_TOKEN;
+// scripts/tokens/fromFigma.mjs
+
+// Load .env in local dev; in CI, env vars come from GitHub Secrets
+import 'dotenv/config';
+
+const TOKEN = process.env.FIGMA_API_TOKEN; // 🔴 was FIGMA_ACCESS_TOKEN
 const URL_BASE = "https://api.figma.com/v1/files";
 export const KEY_PREFIX_COLLECTION = "@";
 
@@ -9,52 +13,75 @@ export const KEY_PREFIX_COLLECTION = "@";
  * @returns {Object<any>} styles data
  */
 export async function getFileStyles(fileKey) {
-  try {
-    const fileResponse = await fetch(`${URL_BASE}/${fileKey}`, {
-      method: "GET",
-      headers: { "X-FIGMA-TOKEN": TOKEN },
-    });
-    const data = await fileResponse.json();
-    return fileRESTResponseToStylesJSON(data);
-  } catch (e) {
-    throw e;
+  if (!TOKEN) {
+    throw new Error("Missing FIGMA_API_TOKEN in environment");
   }
+  if (!fileKey) {
+    throw new Error("Missing FIGMA_FILE_KEY in environment");
+  }
+
+  const fileResponse = await fetch(`${URL_BASE}/${fileKey}`, {
+    method: "GET",
+    headers: { "X-FIGMA-TOKEN": TOKEN },
+  });
+
+  const data = await fileResponse.json();
+
+  return fileRESTResponseToStylesJSON(data);
 }
 
 /**
  * @link https://www.figma.com/developers/api#get-local-variables-endpoint
  * @param {string} fileKey
  * @param {string} nameSpace - the namespace for $extensions data
- * @returns {Object<any>} styles data
+ * @returns {Object<any>} variables data
  */
 export async function getFileVariables(fileKey, nameSpace) {
-  try {
-    const fileResponse = await fetch(`${URL_BASE}/${fileKey}/variables/local`, {
-      method: "GET",
-      headers: { "X-FIGMA-TOKEN": TOKEN },
-    });
-    const data = await fileResponse.json();
-    return variablesRESTResponseToVariablesJSON(data, nameSpace);
-  } catch (e) {
-    throw e;
+  if (!TOKEN) {
+    throw new Error("Missing FIGMA_API_TOKEN in environment");
   }
+  if (!fileKey) {
+    throw new Error("Missing FIGMA_FILE_KEY in environment");
+  }
+
+  const fileResponse = await fetch(`${URL_BASE}/${fileKey}/variables/local`, {
+    method: "GET",
+    headers: { "X-FIGMA-TOKEN": TOKEN },
+  });
+
+  const data = await fileResponse.json();
+  return variablesRESTResponseToVariablesJSON(data, nameSpace);
 }
 
 function fileRESTResponseToStylesJSON(response) {
-  const styles = response.styles;
+  const styles = response.styles ?? {};
+
+  if (!response.styles) {
+    console.warn(
+      "[fromFigma] No `styles` field on Figma file response. " +
+        `Keys on response: ${Object.keys(response).join(", ")}`
+    );
+    if (response.err || response.error || response.status) {
+      console.warn("[fromFigma] Response error details:", response);
+    }
+  }
+
   for (let styleId in styles) {
     if (styles[styleId].remote) {
       delete styles[styleId];
     }
   }
+
   traverseChildrenForStyles(styles, response.document, {
     foundCount: 0,
     needToFind: Object.keys(styles).length,
   });
+
   return Object.values(styles).filter(({ remote }) => !remote);
 
   function traverseChildrenForStyles(styles, node, finder) {
-    if (finder.foundCount >= finder.needToFind) return;
+    if (!node || finder.foundCount >= finder.needToFind) return;
+
     if (node.styles) {
       for (let styleType in node.styles) {
         const styleId = node.styles[styleType];
@@ -62,7 +89,7 @@ function fileRESTResponseToStylesJSON(response) {
           finder.foundCount++;
           if (styleType === "text") {
             const { fontSize, fontFamily, fontWeight, fontStyle } =
-              node.boundVariables;
+              node.boundVariables || {};
             styles[styleId] = {
               type: "TEXT",
               name: styles[styleId].name,
@@ -71,7 +98,7 @@ function fileRESTResponseToStylesJSON(response) {
               fontWeight: fontWeight ? fontWeight[0] : node.fontWeight,
               fontStyle: fontStyle
                 ? fontStyle[0]
-                : node.style.italic
+                : node.style?.italic
                   ? "italic"
                   : "normal",
             };
@@ -85,6 +112,7 @@ function fileRESTResponseToStylesJSON(response) {
         }
       }
     }
+
     if (node.children) {
       node.children.forEach((child) =>
         traverseChildrenForStyles(styles, child, finder),
@@ -223,7 +251,7 @@ function variablesRESTResponseToVariablesJSON(response, nameSpace) {
     collectionIdToKeyMap,
     variables,
   ) {
-    if (value.type === "VARIABLE_ALIAS") {
+    if (value?.type === "VARIABLE_ALIAS") {
       const variable = variables[value.id];
       if (!variable) {
         console.log(value);
