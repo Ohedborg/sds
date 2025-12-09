@@ -1,5 +1,3 @@
-// tokenVariableSyntaxAndDescriptionSnippet.js
-
 Promise.all([
   ["VariableID:106:12464", "var(--sds-color-background-neutral-default)", "Bg/Neutral/Default"],
   ["VariableID:106:12465", "var(--sds-color-background-neutral-hover)", "Bg/Neutral/Hover"],
@@ -151,6 +149,9 @@ Promise.all([
   ["VariableID:409:8191", "var(--sds-size-icon-small)", ""],
   ["VariableID:409:8192", "var(--sds-size-icon-medium)", ""],
   ["VariableID:409:8193", "var(--sds-size-icon-large)", ""],
+  ["VariableID:4658:1670", "var(--sds-size-number)", ""],
+  ["VariableID:4675:8", "var(--sds-size-number-2)", ""],
+  ["VariableID:4797:12303", "var(--sds-size-demo)", ""],
   ["VariableID:56:9308", "var(--sds-size-radius-full)", ""],
   ["VariableID:9:11258", "var(--sds-size-space-100)", ""],
   ["VariableID:9:11259", "var(--sds-size-space-200)", ""],
@@ -341,4 +342,4 @@ Promise.all([
     variable.description = description;
   }
   return;
-})).then(() => console.log("DONE!")).catch(console.error);
+})).then(() => console.log("DONE!")).catch(console.error)
