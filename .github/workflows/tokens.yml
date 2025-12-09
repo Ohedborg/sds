@@ -1,9 +1,9 @@
 name: Run Tokens Script
 
 on:
-  workflow_dispatch:   # Allows manual triggering
+  workflow_dispatch:
   push:
-    branches: [ main ] # Or whichever branches you want
+    branches: [ main ]
 
 jobs:
   run-tokens:
@@ -16,10 +16,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20   # or your required version
+          node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run token script
+        env:
+          FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
         run: npm run script:tokens:rest
