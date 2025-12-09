@@ -1,44 +1,58 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy to GitHub Pages
+name: Sync Figma Tokens
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+  workflow_dispatch:          # Run manually from the Actions tab
+  schedule:
+    - cron: "0 7 * * 1-5"     # (Optional) Weekdays at 07:00 UTC
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write             # needed to push changes / create PR
+  pull-requests: write
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  sync-tokens:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - run: npm ci
-      - run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          path: "./dist"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          fetch-depth: 0      # needed so create-pull-request can compare branches
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20    # or whatever you use
+
+      - name: Install dependencies
+        run: npm ci           # or `npm install` if you don’t use lockfiles
+
+      - name: Run Figma tokens script
+        env:
+          FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }} # adjust to your env var name
+        run: npm run script:tokens:rest
+
+      # Optional: show what changed (nice for debugging)
+      - name: Show git status
+        run: |
+          git status
+          git diff || true
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore(tokens): update generated CSS from Figma"
+          branch: chore/update-figma-tokens
+          branch-suffix: timestamp
+          title: "chore(tokens): update design tokens from Figma"
+          body: |
+            This PR updates generated CSS/design tokens from the Figma variables API.
+
+            - Source: `npm run script:tokens:rest`
+            - Trigger: ${{ github.event_name }} by @${{ github.actor }}
+
+          labels: |
+            design-tokens
+            automated
+          assignees: ohedborg
+          draft: false
