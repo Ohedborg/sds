@@ -1,3 +1,5 @@
+// tokenVariableSyntaxAndDescriptionSnippet.js
+
 Promise.all([
   ["VariableID:106:12464", "var(--sds-color-background-neutral-default)", "Bg/Neutral/Default"],
   ["VariableID:106:12465", "var(--sds-color-background-neutral-hover)", "Bg/Neutral/Hover"],
@@ -339,4 +341,4 @@ Promise.all([
     variable.description = description;
   }
   return;
-})).then(() => console.log("DONE!")).catch(console.error)
+})).then(() => console.log("DONE!")).catch(console.error);
