@@ -1,1 +1,1080 @@
-[]
+[
+  {
+    "type": "TEXT",
+    "name": "Title Hero",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10189"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10188"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10190"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Title Page",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10197"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:58:8569"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:58:8572"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Subtitle",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10177"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10176"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10178"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Heading",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10186"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10185"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10187"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Subheading",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:2103:22308"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:2103:22306"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:2103:22310"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Base",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10180"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10181"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Strong",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10180"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:14844"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Emphasis",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10180"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontStyle": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:14846"
+    }
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Link",
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10181"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Small",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10216"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10181"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Small Strong",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10216"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:14844"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Single Line/Body Base",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10180"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10181"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Body Code",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10183"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10182"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10184"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": "Single Line/Body Small Strong",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10216"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:10179"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:66:14844"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": ".Utilities/Component notes/Regular",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11196"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11201"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11183"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "type": "TEXT",
+    "name": ".Utilities/Component notes/Bold",
+    "fontSize": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11196"
+    },
+    "fontFamily": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11201"
+    },
+    "fontWeight": {
+      "type": "VARIABLE_ALIAS",
+      "id": "VariableID:9:11186"
+    },
+    "fontStyle": "normal"
+  },
+  {
+    "key": "9e7696cb9595996d7ba8766213c450a460499676",
+    "name": "Drop Shadow/300",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "radius": 4,
+        "spread": -1,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11287"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          }
+        }
+      },
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "radius": 4,
+        "spread": -1,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11287"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "63ccdebee66fc6a7f33b3d96e5c05089f7d07cc5",
+    "name": "Drop Shadow/200",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "radius": 4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11281"
+          }
+        }
+      },
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "radius": 4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11281"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "8c66f68b146d81f486aeedb411d82e41ded0c489",
+    "name": "Drop Shadow/100",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "radius": 4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11281"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "9009cee5e83e2bcab1a5afa7b167209d6a18f25a",
+    "name": "Drop Shadow/400",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "radius": 4,
+        "spread": -4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11288"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          }
+        }
+      },
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 32,
+        "spread": -4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11285"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11288"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "529f0be9727a6182861453f89f95c57b85bc7517",
+    "name": "Drop Shadow/500",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "radius": 4,
+        "spread": -4,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11288"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          }
+        }
+      },
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 16,
+        "spread": -8,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11289"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "c234820f6045c475cd0b4e6acd2e809b7551682e",
+    "name": "Drop Shadow/600",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "DROP_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.4000000059604645
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 32,
+        "spread": -8,
+        "showShadowBehindNode": false,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11285"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11289"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11237"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "433a98c55439fa9a23f91f79312a2d0d70da1f93",
+    "name": "Inner Shadow/100",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "radius": 4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:228:6769"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11281"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "ec87de748998222ade53434d30c48ece38e43989",
+    "name": "Inner Shadow/200",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "radius": 4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11281"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "4575adfd17d9be235bbc058fd9bfa7846994293a",
+    "name": "Inner Shadow/300",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.05000000074505806
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "radius": 4,
+        "spread": -1,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11287"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11234"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11282"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "2184c046df127f9af39ccade30c70353737edb37",
+    "name": "Inner Shadow/400",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 32,
+        "spread": -4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11285"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11288"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "6309f55c0aee23d577c9d871e22be862d5182ee8",
+    "name": "Inner Shadow/500",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.10000000149011612
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 16,
+        "spread": -8,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11289"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11235"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "2137503555f3b121db85b94c3d3028bb11009fbb",
+    "name": "Inner Shadow/600",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "INNER_SHADOW",
+        "visible": true,
+        "color": {
+          "r": 0.0470588244497776,
+          "g": 0.0470588244497776,
+          "b": 0.05098039284348488,
+          "a": 0.4000000059604645
+        },
+        "blendMode": "NORMAL",
+        "offset": {
+          "x": 0,
+          "y": 16
+        },
+        "radius": 32,
+        "spread": -8,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11285"
+          },
+          "spread": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11289"
+          },
+          "color": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11237"
+          },
+          "offsetX": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11280"
+          },
+          "offsetY": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9:11284"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "a2f6b2586198a401988661a7f40447455c7efc2f",
+    "name": "Blur/Overlay",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "BACKGROUND_BLUR",
+        "visible": true,
+        "radius": 4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:228:6769"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "b7c3baa32bccf688b67ba17f37f86efb49704f9a",
+    "name": "Blur/Layer",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "LAYER_BLUR",
+        "visible": true,
+        "radius": 4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:228:6769"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "b491e25e39de6041b7616f04b013882703715663",
+    "name": "Blur/Glass",
+    "styleType": "EFFECT",
+    "remote": false,
+    "description": "",
+    "type": "EFFECT",
+    "effects": [
+      {
+        "type": "BACKGROUND_BLUR",
+        "visible": true,
+        "radius": 4,
+        "boundVariables": {
+          "radius": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:228:6769"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "key": "fc6313686c9022aff24ce6ffe640987aa9978796",
+    "name": "Image Placeholder",
+    "styleType": "FILL",
+    "remote": false,
+    "description": ""
+  }
+]
