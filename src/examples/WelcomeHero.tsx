@@ -20,7 +20,7 @@ export function WelcomeHero() {
       >
         <TextContentTitle
           align="center"
-          title="Welcome Home"
+          title="Hello OpenAI"
           subtitle={<>We're happy to have&nbsp;you.</>}
         />
         <Form singleLine>
